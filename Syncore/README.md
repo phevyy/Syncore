@@ -404,14 +404,6 @@ syncore/
 
 ---
 
-## Katkılar
-
-**Yazar:** [Adınız]  
-**Üniversite:** [Üniversite Adı]  
-**Bölüm:** Bilgisayar Mühendisliği  
-**Yıl:** 2026
-
----
 
 <div align="center">
 
