@@ -207,14 +207,6 @@ syncore/
 
 ---
 
-## Credits
-
-**Author:** [Your Name]  
-**University:** [University Name]  
-**Department:** Computer Engineering  
-**Year:** 2026
-
----
 
 <a name="türkçe"></a>
 # 🇹🇷 Türkçe
