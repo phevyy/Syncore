@@ -1,0 +1,17 @@
+# Desktop Application Dependencies
+# Python 3.8+ gereklidir
+
+# UI Framework
+PyQt6>=6.4.0
+
+# Kriptografi
+cryptography>=41.0.0
+argon2-cffi>=23.1.0
+
+# QR Code (device pairing için)
+qrcode[pil]>=7.4.0
+
+# Veritabanı (SQLite Python ile gelir, ekstra gerekmiyor)
+
+# Test (opsiyonel)
+pytest>=7.4.0

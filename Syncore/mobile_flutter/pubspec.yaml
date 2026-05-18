@@ -1,0 +1,53 @@
+name: password_vault_2fa
+description: Password Vault 2FA - Mobile Client
+publish_to: 'none'
+version: 1.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  mobile_scanner: ^5.2.3
+  shared_preferences: ^2.3.2
+  crypto: ^3.0.3
+  sqflite: ^2.3.2
+  path: ^1.8.0
+  encrypt: ^5.0.3
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#0d0d1a"
+  adaptive_icon_foreground: "assets/icon/logo.png"
+
+flutter_native_splash:
+  color: "#0d0d1a"
+  image: assets/splash/splash_icon.png
+  color_dark: "#0d0d1a"
+  image_dark: assets/splash/splash_icon.png
+  android_12:
+    image: assets/splash/splash_icon.png
+    icon_background_color: "#0d0d1a"
+    color: "#0d0d1a"
+    color_dark: "#0d0d1a"
+  web: false
+  ios: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/logo.png
+    - assets/splash/mobil.png
+    - assets/splash/splash_icon.png

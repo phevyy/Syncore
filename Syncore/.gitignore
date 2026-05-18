@@ -1,0 +1,51 @@
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Veritabanı (hassas veri — asla commit etme)
+*.db
+*.sqlite
+*.sqlite3
+
+# PyInstaller build artifacts
+desktop/build/
+desktop/dist/
+desktop/*.spec
+
+# Inno Setup output
+desktop/installer/
+
+# ── Flutter ───────────────────────────────────────────────────
+mobile_flutter/build/
+mobile_flutter/.dart_tool/
+mobile_flutter/.flutter-plugins
+mobile_flutter/.flutter-plugins-dependencies
+mobile_flutter/.pub-cache/
+mobile_flutter/.pub/
+mobile_flutter/pubspec.lock
+mobile_flutter/android/.gradle/
+mobile_flutter/android/local.properties
+mobile_flutter/android/key.properties
+mobile_flutter/**/*.class
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Claude Code ───────────────────────────────────────────────
+.claude/
