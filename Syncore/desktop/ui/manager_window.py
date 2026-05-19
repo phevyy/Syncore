@@ -1332,7 +1332,7 @@ class QRPairingDialog(QDialog):
     def __init__(self, server_ip, secret_b64, parent=None):
         super().__init__(parent)
         self.setWindowTitle('Mobil Cihaz Eşleştir')
-        self.setFixedSize(480, 580)
+        self.setFixedSize(480, 760)
         self.setModal(True)
         self.setStyleSheet(f'QDialog {{ background-color: {COLORS["bg_primary"]}; }}')
         self._build(server_ip, secret_b64)
@@ -1356,7 +1356,7 @@ class QRPairingDialog(QDialog):
 
         qr_lbl = QLabel()
         qr_lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        qr_lbl.setFixedHeight(220)
+        qr_lbl.setFixedHeight(280)
 
         if ip and secret:
             try:
@@ -1372,7 +1372,7 @@ class QRPairingDialog(QDialog):
                 buf.seek(0)
                 pix = QPixmap()
                 pix.loadFromData(buf.read())
-                qr_lbl.setPixmap(pix.scaled(200, 200,
+                qr_lbl.setPixmap(pix.scaled(260, 260,
                     Qt.AspectRatioMode.KeepAspectRatio,
                     Qt.TransformationMode.SmoothTransformation))
             except ImportError:
@@ -1386,7 +1386,9 @@ class QRPairingDialog(QDialog):
         qr_frame.setStyleSheet(
             f'background-color: {COLORS["bg_secondary"]}; '
             f'border: 1px solid {COLORS["border"]}; border-radius: 12px;')
-        QVBoxLayout(qr_frame).addWidget(qr_lbl)
+        fl = QVBoxLayout(qr_frame)
+        fl.setContentsMargins(8, 8, 8, 8)
+        fl.addWidget(qr_lbl)
         lay.addWidget(qr_frame)
 
         for label, value in [
@@ -1394,19 +1396,23 @@ class QRPairingDialog(QDialog):
             ('Shared Secret', secret or '-')
         ]:
             row = QVBoxLayout()
+            row.setSpacing(4)
             lbl = QLabel(label)
             lbl.setStyleSheet(
                 f'color: {COLORS["text_secondary"]}; font-size: 11px; background: transparent;')
             row.addWidget(lbl)
+            field_row = QHBoxLayout()
+            field_row.setSpacing(8)
             field = QLineEdit(value)
             field.setReadOnly(True)
             field.setStyleSheet(INPUT_STYLE)
-            copy_btn = QPushButton('Kopyala')
+            copy_btn = QPushButton('📋 Kopyala')
+            copy_btn.setFixedSize(110, 40)
             copy_btn.setStyleSheet(BUTTON_SECONDARY_STYLE)
-            copy_btn.setFixedHeight(32)
             copy_btn.clicked.connect(lambda _, v=value: QApplication.clipboard().setText(v))
-            row.addWidget(field)
-            row.addWidget(copy_btn)
+            field_row.addWidget(field)
+            field_row.addWidget(copy_btn)
+            row.addLayout(field_row)
             lay.addLayout(row)
 
         close_btn = QPushButton('Kapat')

@@ -10,7 +10,7 @@ import 'package:password_vault_2fa/main.dart';
 
 void main() {
   testWidgets('App smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const PasswordVaultApp());
+    await tester.pumpWidget(const PasswordVaultApp(hasCredentials: false));
     expect(find.byType(PasswordVaultApp), findsOneWidget);
   });
 }

@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:encrypt/encrypt.dart' as enc;
 import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
-import 'package:sqflite/sql.dart' show ConflictAlgorithm;
 import 'package:uuid/uuid.dart';
 
 /// Cihaz üzerinde yerel, şifreli şifre deposu.

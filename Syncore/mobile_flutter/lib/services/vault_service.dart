@@ -79,7 +79,6 @@ class VaultSession {
     }
   }
 
-  _ByteReader get reader => _reader;
 
   // ── Şifre Listesi ────────────────────────────────────────────────────
 

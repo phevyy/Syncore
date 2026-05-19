@@ -121,6 +121,7 @@ class _VaultScreenState extends State<VaultScreen> {
     _session = null;
     // Eski IP'yi temizle — sadece yeni QR taranırsa bağlanılır
     await StorageService.clearServerIp();
+    if (!mounted) return;
     await Navigator.pushNamed(context, '/scan');
     if (!mounted) return;
     final creds = await StorageService.load();
@@ -954,8 +955,8 @@ String _siteEmoji(String title) {
        'gsm', 'operatör'], 'Telekom', '📡'),
   ];
   for (final c in cats) {
-    final kws = c.$1 as List<String>;
-    if (kws.any((kw) => t.contains(kw))) return (c.$2 as String, c.$3 as String);
+    final kws = c.$1;
+    if (kws.any((kw) => t.contains(kw))) return (c.$2, c.$3);
   }
   return null;
 }
@@ -1264,7 +1265,7 @@ class _PasswordFormState extends State<_PasswordForm> {
 
   @override
   void dispose() {
-    for (final c in [_title, _user, _pwd, _url, _notes]) c.dispose();
+    for (final c in [_title, _user, _pwd, _url, _notes]) { c.dispose(); }
     super.dispose();
   }
 
