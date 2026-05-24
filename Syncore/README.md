@@ -209,8 +209,7 @@ syncore/
 
 ## Credits
 
-**Author:** [Your Name]  
-**University:** [University Name]  
+**Author:** Fikret Emre Sınmaz  
 **Department:** Computer Engineering  
 **Year:** 2026
 
@@ -406,8 +405,7 @@ syncore/
 
 ## Katkılar
 
-**Yazar:** [Adınız]  
-**Üniversite:** [Üniversite Adı]  
+**Yazar:** Fikret Emre Sınmaz   
 **Bölüm:** Bilgisayar Mühendisliği  
 **Yıl:** 2026
 
