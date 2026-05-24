@@ -31,4 +31,9 @@ Name: "{group}\Syncore"; Filename: "{app}\Syncore.exe"; IconFilename: "{app}\Syn
 Name: "{autodesktop}\Syncore"; Filename: "{app}\Syncore.exe"; IconFilename: "{app}\Syncore.exe"; Tasks: desktopicon
 
 [Run]
+Filename: "netsh"; Parameters: "advfirewall firewall delete rule name=""Syncore"""; Flags: runhidden
+Filename: "netsh"; Parameters: "advfirewall firewall add rule name=""Syncore"" dir=in action=allow protocol=TCP localport=8765 profile=private,domain"; Flags: runhidden
 Filename: "{app}\Syncore.exe"; Description: "Syncore'u başlat"; Flags: nowait postinstall skipifsilent
+
+[UninstallRun]
+Filename: "netsh"; Parameters: "advfirewall firewall delete rule name=""Syncore"""; Flags: runhidden

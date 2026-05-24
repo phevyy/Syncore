@@ -134,7 +134,6 @@ Syncore is a secure, offline-first password vault with QR-based two-factor authe
 ---
 
 ## Installation
-You can download the pre-compiled `.exe` installer for Windows and the `.apk` file for Android directly from the Releases page.
 
 ### Desktop (from source)
 ```bash
@@ -145,10 +144,10 @@ python main.py
 ```
 
 ### Desktop (installer)
-Download and run SyncoreSetup.exe from the latest release. It installs to Program Files and creates a Start Menu shortcut. No Python required.
+Run `SyncoreSetup.exe` — installs to Program Files, creates Start Menu shortcut. No Python required.
 
 ### Mobile (APK)
-Download Syncore.apk from the latest release, transfer it to your Android device, and install. 
+Transfer `Syncore.apk` to the Android device and install.  
 *(Enable "Install from unknown sources" in device settings if needed)*
 
 ---
@@ -208,6 +207,14 @@ syncore/
 
 ---
 
+## Credits
+
+**Author:** [Your Name]  
+**University:** [University Name]  
+**Department:** Computer Engineering  
+**Year:** 2026
+
+---
 
 <a name="türkçe"></a>
 # 🇹🇷 Türkçe
@@ -324,9 +331,6 @@ Syncore, QR tabanlı iki faktörlü kimlik doğrulama sistemine sahip, güvenli 
 ---
 
 ## Kurulum
-📥 **[En Güncel Sürümü İndir (Releases)](https://github.com/phevyy/Syncore/releases/latest)**
-
-Windows için derlenmiş hazır `.exe` kurulum dosyasını ve Android için `.apk` dosyasını doğrudan Releases sayfasından indirebilirsiniz.
 
 ### Masaüstü (kaynak koddan)
 ```bash
@@ -337,10 +341,10 @@ python main.py
 ```
 
 ### Masaüstü (kurulum dosyası)
-En güncel sürümden (Release) SyncoreSetup.exe dosyasını indirip çalıştırın. Program Files dizinine kurulur ve Başlat Menüsüne kısayol ekler. Python kurulumu gerektirmez.
+`SyncoreSetup.exe`'yi çalıştırın — Program Files'a kurar, Başlat Menüsüne kısayol ekler. Python gerekmez.
 
 ### Mobil (APK)
-En güncel sürümden (Release) Syncore.apk dosyasını indirin, Android cihaza aktarın ve yükleyin.  
+`Syncore.apk`'yı Android cihaza aktarın ve yükleyin.  
 *(Gerekirse cihaz ayarlarından "Bilinmeyen kaynaklardan yükleme"ye izin verin)*
 
 ---
@@ -400,6 +404,14 @@ syncore/
 
 ---
 
+## Katkılar
+
+**Yazar:** [Adınız]  
+**Üniversite:** [Üniversite Adı]  
+**Bölüm:** Bilgisayar Mühendisliği  
+**Yıl:** 2026
+
+---
 
 <div align="center">
 
